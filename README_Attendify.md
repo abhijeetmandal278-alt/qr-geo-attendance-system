@@ -289,6 +289,7 @@ All endpoints are prefixed with `/api`. Routes marked 🔒 require a valid JWT. 
 
 ## Demo
 
-📹 [Add link to your demo video here]
+📹 **Video Demo:** https://drive.google.com/file/d/1et8bybt1PDWnOLmcsTsNcre-6RQTAl8Y/view?usp=sharing
 🌐 **Live app:** https://qr-geo-attendance-system.vercel.app/
 🔗 **Backend API:** https://attendify-backend-xgaf.onrender.com
+
