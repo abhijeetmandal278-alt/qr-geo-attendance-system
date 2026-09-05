@@ -13,7 +13,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 function Home() {
   const [healthStatus, setHealthStatus] = useState(null);
   useEffect(() => {
-    fetch('/api/health')
+    fetch('https://attendify-backend-xgaf.onrender.com/api/health')
       .then((res) => res.json())
       .then((data) => setHealthStatus(data))
       .catch(() => setHealthStatus({ status: 'error', message: 'Backend not reachable' }));
