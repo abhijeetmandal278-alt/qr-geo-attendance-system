@@ -37,7 +37,7 @@ export default function EventForm() {
           time: ev.time || '',
           latitude: ev.latitude ?? '',
           longitude: ev.longitude ?? '',
-          geofenceRadius: ev.geofenceRadius ?? 100,
+          geofenceRadius: ev.geofenceRadius ?? 200,
           description: ev.description || '',
         });
       })
