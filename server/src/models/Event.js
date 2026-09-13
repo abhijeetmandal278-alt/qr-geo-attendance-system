@@ -33,7 +33,7 @@ const eventSchema = new mongoose.Schema(
     geofenceRadius: {
       type: Number,
       required: [true, 'Geofence radius is required'],
-      default: 100, // meters
+      default: 200, // meters
     },
     organizer: {
       type: mongoose.Schema.Types.ObjectId,
