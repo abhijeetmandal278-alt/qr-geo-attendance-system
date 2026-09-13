@@ -11,7 +11,12 @@ const app = express();
 // CORS – allow requests from the React client
 app.use(
   cors({
-    origin: env.CLIENT_URL,
+    origin: function (origin, callback) {
+      if (!origin) return callback(null, true);
+      const isVercel = /\.vercel\.app$/.test(origin);
+      const isAllowed = origin === env.CLIENT_URL || isVercel;
+      callback(isAllowed ? null : new Error('Not allowed by CORS'), isAllowed);
+    },
     credentials: true,
   })
 );
