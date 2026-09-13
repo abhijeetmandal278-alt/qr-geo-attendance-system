@@ -9,7 +9,7 @@ const emptyForm = {
   time: '',
   latitude: '',
   longitude: '',
-  geofenceRadius: 100,
+  geofenceRadius: 200,
   description: '',
 };
 
